@@ -1,6 +1,9 @@
-// Function to generate a unique room ID
+// Import the uuid library
+import { v4 as uuidv4 } from 'uuid';
+
+// Function to generate a unique room ID using UUID
 function generateRoomId() {
-  return 'room-' + Date.now();
+  return 'room-' + uuidv4();
 }
 
 // Function to handle the "Play with Friend" button click
