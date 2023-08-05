@@ -1,10 +1,11 @@
-// Import the uuid library
-import { v4 as uuidv4 } from 'uuid';
-
-// Function to generate a unique room ID using UUID
+// Function to generate a shorter unique room ID
 function generateRoomId() {
-  return 'room-' + uuidv4();
+  const timestamp = Date.now().toString(36); // Get the current timestamp as a shorter string
+  const randomId = Math.random().toString(36).substr(2, 4); // Generate a random string of 4 characters
+
+  return 'room-' + timestamp + '-' + randomId;
 }
+
 
 // Function to handle the "Play with Friend" button click
 function handlePlayButtonClick() {
