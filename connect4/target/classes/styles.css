@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.landing-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.play-button {
+  background-color: #00bfff;
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.play-button:hover {
+  background-color: #0077cc;
+}
+
+/* Additional Styling for Centering the Button */
+.play-button {
+  display: block;
+  margin: 0 auto;
+}
